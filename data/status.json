@@ -1,0 +1,40 @@
+{
+  "generated_at": "2025-01-15T12:00:00Z",
+  "seed": 20250115,
+  "services": [
+    {
+      "id": "api",
+      "name": "Public API",
+      "description": "Requests, authentication, and webhooks",
+      "status": "operational"
+    },
+    {
+      "id": "web",
+      "name": "Web application",
+      "description": "Customer dashboard and account pages",
+      "status": "operational"
+    },
+    {
+      "id": "payments",
+      "name": "Payments",
+      "description": "Checkout, invoices, and refunds",
+      "status": "operational"
+    },
+    {
+      "id": "search",
+      "name": "Search",
+      "description": "Catalog and account search",
+      "status": "degraded"
+    }
+  ],
+  "incidents": [
+    {
+      "id": "inc-004",
+      "service": "search",
+      "title": "Search latency elevated",
+      "status": "monitoring",
+      "message": "Synthetic incident data: engineers are monitoring elevated latency.",
+      "created_at": "2025-01-15T11:10:00Z"
+    }
+  ]
+}
